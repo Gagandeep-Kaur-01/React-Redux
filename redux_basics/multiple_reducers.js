@@ -56,7 +56,12 @@ const pensReducer = (state = initialStatePens, action) => {
 
 }
 
-const store = createStore(pensReducer); //created store and passing reducer function into it
+const reducer = combineReducers({
+    Book: booksReducer, 
+    Pen: pensReducer
+});
+
+const store = createStore(reducer); //created store and passing reducer function into it
 console.log("Initial State", store.getState());
 const unsubscribe = store.subscribe(()=> {console.log('Updated state value', store.getState())});
 store.dispatch(buyBook());
