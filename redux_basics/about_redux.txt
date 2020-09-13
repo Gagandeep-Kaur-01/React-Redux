@@ -1,27 +1,28 @@
 
 React: 
-•	It is the UI library used to build user interfaces.
+• It is the UI library used to build user interfaces.
 
 Redux: 
-•	It is the state management library kin a predictable way in javascript application.
-•	It is a predicatable state container for javascripts apps.
+• It is the state management library kin a predictable way in javascript application.
+• It is a predicatable state container for javascripts apps.
            : It is javascript apps.
            : It is a state container
            : It is predictable.
-•	Example:
+• Example:
 Customer (buy book) ==> Shopkeeper <===> Book shop (store books on shelf), Remove book from shelf and receipt to keep record.
 
+Similarly,
 Component (action, describes what happened) ==> Reducer (update state track records, manage all the states) <===> Redux (store state of application)
 
 React Redux 
-•	It is the official Redux UI binding library for React
+• It is the official Redux UI binding library for React
 
 3 principle of redux:
 1. store
 2. action
 3. reducer
 
-Store: 
+=> Store: 
 The building blocks of Redux
 1. Holds app state value
 2. Allow access to state via getState()
@@ -29,9 +30,7 @@ The building blocks of Redux
 4. Register listener (state changes) via subscribe(listener)
 5. Handles unregstering of listeners via the function returned by subscribe(listener)
 
-spread operator :- to clone state value
-
-React App (dispatch) --> Action --> Reducer --> Redux Store State (subscribe) --> React App
-
-Reducers, which makes the state in Redux.
-Then there are actions, plain JavaScript objects, acting as messengers in your application. 
+=> spread operator :- to clone state value
+=> React App (dispatch) --> Action --> Reducer --> Redux Store State (subscribe) --> React App
+=> Reducers, which makes the state in Redux.
+=> Then there are actions, plain JavaScript objects, acting as messengers in the application. 
