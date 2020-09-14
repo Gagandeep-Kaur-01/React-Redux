@@ -1,6 +1,7 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 import BookContainer from './components/BookContainer';
+import HookBookContainer from './components/HookBookContainer'
 import store from './redux/store'
 import './App.css';
 
@@ -9,10 +10,11 @@ function App() {
 
     <Provider store = {store}>
     <div className="App">
-      <BookContainer/>    
+      <BookContainer/>
+      <HookBookContainer/>     
     </div>
     </Provider>
-    
+
   );
 }
 
