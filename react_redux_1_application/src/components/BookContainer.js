@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {connect} from 'react-redux';
+import {buyBook} from '../redux'
 
 function BookContainer(props) {
     
@@ -11,4 +13,18 @@ function BookContainer(props) {
     )
 }
 
-export default BookContainer;
+const mapStatetoProps= (state) => {
+    return{
+        numberOfBooks: state.numberOfBooks
+    }
+}
+
+const mapDispatchtoProps = (dispatch) => {
+    return {
+        buyBook : function() {
+            dispatch(buyBook());
+        }
+    }
+}
+
+export default connect(mapStatetoProps,mapDispatchtoProps) (BookContainer);
