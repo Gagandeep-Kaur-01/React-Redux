@@ -1,0 +1,5 @@
+•	Define type, 
+•	Create action, 
+•	Create reducer 
+•	Then store
+•	Subscribe and dispatch then.
